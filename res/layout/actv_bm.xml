@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/actv_bm_tv_file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:padding="3dp"
+        android:text="@string/generic_tv_no_data"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+    
+    <ScrollView
+        android:id="@+id/actv_bm_sv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:focusable="false"
+        
+        >
+
+        <TextView
+            android:id="@+id/actv_bm_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:gravity="left|top"
+            android:lines="2"
+            android:padding="3dp"
+            android:text="@string/generic_tv_no_data"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/green4"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/actv_bm_bt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:focusable="false"
+            android:text="@string/generic_bt_back"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

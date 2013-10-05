@@ -5,4 +5,148 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
 
+    <!-- Generic items -->
+	    <string name="generic_bt_ok">OK</string>
+	    <string name="generic_bt_cancel">キャンセル</string>
+	    <string name="generic_bt_back">Back</string>
+	
+	    <string name="generic_tv_confirm">確認</string>
+	    <string name="generic_tv_menu">メニュー</string>
+	    <string name="generic_tv_register">登録</string>
+	    <string name="generic_tv_edit">編集</string>
+	    <string name="generic_tv_delete">削除</string>
+   		<string name="generic_tv_no_data">No data</string>
+   		<string name="generic_bt_quit">終了</string>
+    	<string name="generic_notice">注目</string>
+    <!-- main_menu.xml -->
+    <string name="main_opt_menu_create_folder">フォルダ作成</string>
+    <string name="main_opt_menu_refresh_db">DBリフレッシュ</string>
+    <string name="main_opt_menu_db_activity">データベース</string>
+    <string name="main_opt_menu_search">探す</string>
+    <string name="main_opt_menu_preferences">カスタマイズ</string>
+    <string name="main_opt_menu_history">閲覧履歴</string>
+    <string name="main_opt_menu_admin">Admin</string>
+
+    <!-- main_opt_menu_admin -->
+    	<string name="admin_reset_table_bm">Reset table: bm</string>
+    	<string name="admin_reset_table_history">Reset table: history</string>
+    	<string name="admin_start_service_player">Start service: Player</string>
+    	<string name="admin_stop_service_player">Stop service: Player</string>
+    	
+    <!-- preferences.xml -->
+    <string name="prefs_shared_prefs_name">IFM9_prefs</string>
+    <string name="prefs_db_refresh_key">db_refresh</string>
+    <string name="prefs_db_refresh_title">DBリフレッシュを、毎回行う</string>
+    
+    <!-- Dialogues ================================ -->
+    <!-- dlg_create_folder.xml -->
+    <string name="dlg_create_folder_title">フォルダ作成</string>
+    <string name="dlg_create_folder_tv_message">フォルダ名を入れてください</string>
+    <string name="dlg_create_folder_tv_folder_set">フォルダセットの作成</string>
+    
+    <!-- dlg_input_empty.xml -->
+    <string name="dlg_input_empty_title">注意！</string>
+    <string name="dlg_input_empty_message">入力がありません</string>
+    <string name="dlg_input_empty_reenter">もう一度入力</string>
+    <string name="dlg_input_empty_cancel">取りやめ</string>
+    
+    <!-- dlg_confirm_create_folder.xml -->
+    <string name="dlg_confirm_create_folder_tv_message">このフォルダを作りますか？</string>
+    
+    <!-- dlg_confirm_remove_folder.xml -->
+    <string name="dlg_confirm_remove_folder_tv_message">このフォルダを削除しますか？</string>
+    
+    <!-- db_manager.xml -->
+    <string name="db_manager_btn_create_table">テーブル作成</string>
+    <string name="db_manager_btn_drop_table">テーブル削除</string>
+    <string name="db_manager_btn_register_patterns">定型句登録</string>
+    
+    <!-- dlg_drop_table.xml -->
+    <string name="dlg_drop_table_title">テーブル削除</string>
+    
+    <!-- dlg_confirm_drop_table.xml -->
+    <string name="dlg_confirm_drop_table_tv_message_drop">このテーブルを削除しますか？</string>
+    
+    
+    <!-- image_actv_menu.xml -->
+    <string name="image_actv_menu_add_memo">メモ</string>
+    <string name="image_actv_menu_add_patterns">定型句登録</string>
+    
+    <!-- dlg_add_memos.xml -->
+    <string name="dlg_add_memos_tv_title">メモ</string>
+    <string name="dlg_add_memos_bt_patterns">定型</string>
+    
+    <!-- thumb_actv_menu.xml -->
+    <string name="thumb_actv_menu_move_mode">移動モード</string>
+    <string name="thumb_actv_menu_move_files">移動</string>
+    
+    <!-- dlg_confirm_move_files.xml -->
+    <string name="dlg_confirm_move_files_tv_message">このフォルダへ移しますか？</string>
+    
+    <!-- dlg_item_menu.xml -->
+    <string name="dlg_item_menu_item_edit_memo">メモ編集</string>
+    <string name="dlg_item_menu_item_delete">削除</string>
+    <string name="dlg_item_menu_item_move">移動</string>
+    
+    <!-- dlg_create_table.xml -->
+	    <string name="dlg_create_table_title">テーブル作成</string>
+	    <string name="dlg_create_table_label_column_name">カラム名</string>
+	    <string name="dlg_create_table_label_data_type">データ・タイプ</string>
+	    <string name="dlg_create_table_label_table_name">テーブル名</string>
+	    
+    <!-- dlg_memo_patterns.xml -->
+    	<string name="dlg_memo_patterns_title">定型</string>
+    
+    <!-- dlg_register_patterns.xml -->
+    	<string name="dlg_register_patterns_title">定型句登録</string>
+    	<string name="dlg_register_patterns_tv_word">語句</string>
+    	<string name="dlg_register_patterns_tv_table_name">テーブル名</string>
+    	
+    <!-- dlg_search.xml -->
+    	<string name="dlg_search_title">サーチ</string>
+    	<string name="dlg_search_tv_message">サーチする語句を入れてください（複数の場合、スペースで区切ります）</string>
+    	<string name="dlg_search_message_all_table">全テーブル検索</string>
+    	
+    <!-- dlg_db_admin.xml -->
+    	<string name="dlg_db_admin_title">DB Admin</string>
+    	<string name="dlg_db_admin_item_backup_db">Backup DB</string>
+    	<string name="dlg_db_admin_item_refresh_db">DBリフレッシュ</string>
+    
+    <!-- dlg_delete_patterns.xml -->
+    	<string name="dlg_delete_patterns_title">定型句　削除</string>
+    	
+    <!-- dlg_confirm_delete_patterns.xml -->
+    	<string name="dlg_confirm_delete_patterns_message">この定型句を削除しますか？</string>
+    
+    <!-- actv_play.xml -->
+    	<string name="actv_play_bt_play">Play</string>
+    	<string name="actv_play_bt_stop">Stop</string>
+		<string name="actv_play_bt_add_bm">Add bookmark</string>
+   		<string name="actv_play_bt_see_bm">See bookmarks</string>
+    	
+    <!-- dlg_edit_title.xml -->
+    	<string name="dlg_edit_title_title">タイトル編集</string>
+
+ 	<!-- dlg_edit_title.xml -->
+    	<string name="dlg_edit_memo_title">メモ編集</string>
+    		
+    	
+    <!-- ALActv.java -->
+    	<string name="al_actv_menu_move_mode">移動モード</string>
+    	<string name="al_actv_menu_move_files">移動</string>
+    
+    <!-- menu_actv_play.xml -->
+    	<string name="menu_actv_play_create_folder">パターン登録</string>
+    	
+   	<!-- MainActv.java -->
+   		<string name="main_quit">アプリを終了しますか？</string>
+   	
+   	<!-- dlg_bmactv_list_long_click -->
+   		<string name="dlg_bmactv_list_long_click_title">ブックマーク</string>
+   		
+   	<!-- dlg_edit_item.xml -->
+   		<string name="dlg_edit_item_title">Edit bookmark</string>
+   		<string name="dlg_edit_item_bm_title">タイトル</string>
+   		<string name="dlg_edit_item_memo">メモ</string>
+   		    
 </resources>
