@@ -341,7 +341,7 @@ public class ButtonOnClickListener implements OnClickListener {
 		/***************************************
 		 * 2. Insert data using the instance
 		 ***************************************/
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		boolean res = dbu.insertData_bm(actv, bm);
 		
 		if (res == true) {
@@ -382,7 +382,7 @@ public class ButtonOnClickListener implements OnClickListener {
 		/***************************************
 		 * Setup db
 		 ***************************************/
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		//
 //		SQLiteDatabase wdb = dbu.getWritableDatabase();
@@ -400,7 +400,7 @@ public class ButtonOnClickListener implements OnClickListener {
 		 ***************************************/
 		boolean res = Methods.add_column_to_table(
 							actv,
-							CONS.dbName,
+							CONS.DB.dbName,
 							CONS.DB.tname_BM,
 							"aiTableName",
 							"TEXT");
@@ -420,7 +420,7 @@ public class ButtonOnClickListener implements OnClickListener {
 		/***************************************
 		 * Validate: Any bookmarks?
 		 ***************************************/
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		long numOfBM = dbu.getNumOfEntries_BM(actv, CONS.DB.tname_BM, ai.getDb_id());
 		

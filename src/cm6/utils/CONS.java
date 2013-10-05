@@ -96,7 +96,9 @@ public class CONS {
 	/*********************************
 	 * DB
 	 *********************************/
-	public static String dbName = "cm5.db";
+//	public static String dbName = "cm5.db";
+	public static String dbName = "cm6.db"; //=> Also, CONS.DB.dbName has the 
+											//		same value of "cm6.db"
 	
 	// Table names
 	public static String tname_memo_patterns = "memo_patterns";

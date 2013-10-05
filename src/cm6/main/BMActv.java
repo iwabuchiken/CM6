@@ -65,7 +65,7 @@ public class BMActv extends ListActivity {
 		/***************************************
 		 * 1. Build a BM list
 		 ***************************************/
-		DBUtils dbu = new DBUtils(this, CONS.dbName);
+		DBUtils dbu = new DBUtils(this, CONS.DB.dbName);
 		
 //		List<BM> bmList = dbu.getBMList(this, ai.getDb_id());
 		CONS.BMActv.bmList = dbu.getBMList(this, ai.getDb_id());
