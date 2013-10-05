@@ -9,10 +9,10 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import cm5.items.BM;
-import cm5.main.R;
-import cm5.utils.CONS;
-import cm5.utils.Methods;
+import cm6.items.BM;
+import cm6.main.R;
+import cm6.utils.CONS;
+import cm6.utils.Methods;
 
 public class BMLAdapter extends ArrayAdapter<BM> {
 

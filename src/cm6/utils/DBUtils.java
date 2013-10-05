@@ -5,11 +5,11 @@ package cm6.utils;
 import java.util.ArrayList;
 import java.util.List;
 
-import cm5.items.AI;
-import cm5.items.BM;
-import cm5.items.HI;
-import cm5.items.TI;
-import cm5.main.MainActv;
+import cm6.items.AI;
+import cm6.items.BM;
+import cm6.items.HI;
+import cm6.items.TI;
+import cm6.main.MainActv;
 
 import android.app.Activity;
 import android.content.ContentResolver;

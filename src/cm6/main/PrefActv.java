@@ -1,6 +1,6 @@
 package cm6.main;
 
-import cm5.main.R;
+import cm6.main.R;
 import android.app.ListActivity;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;

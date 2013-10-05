@@ -1,6 +1,6 @@
 package cm6.main;
 
-import cm5.main.R;
+import cm6.main.R;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -11,17 +11,17 @@ import java.util.List;
 
 import org.apache.commons.lang.StringUtils;
 
-import cm5.items.AI;
-import cm5.listeners.CustomOnItemLongClickListener;
-import cm5.listeners.button.ButtonOnClickListener;
-import cm5.listeners.button.ButtonOnTouchListener;
-import cm5.listeners.dialog.DialogListener;
-import cm5.tasks.RefreshDBTask;
-import cm5.utils.CONS;
-import cm5.utils.DBUtils;
-import cm5.utils.Methods;
-import cm5.utils.Methods_dlg;
-import cm5.utils.Tags;
+import cm6.items.AI;
+import cm6.listeners.CustomOnItemLongClickListener;
+import cm6.listeners.buttons.ButtonOnClickListener;
+import cm6.listeners.buttons.ButtonOnTouchListener;
+import cm6.listeners.dialogues.DialogListener;
+import cm6.tasks.RefreshDBTask;
+import cm6.utils.CONS;
+import cm6.utils.DBUtils;
+import cm6.utils.Methods;
+import cm6.utils.Methods_dlg;
+import cm6.utils.Tags;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -91,32 +91,32 @@ public class MainActv extends ListActivity {
         
         vib = (Vibrator) this.getSystemService(this.VIBRATOR_SERVICE);
         
-        /*----------------------------
-		 * 4. Set list
-			----------------------------*/
-        set_initial_dir_list();
-        
-        /*----------------------------
-		 * 5. Set listener => Image buttons
-			----------------------------*/
-		set_listeners();
-		
-		/*----------------------------
-		 * 6. Set path label
-			----------------------------*/
-//		Methods.updatePathLabel(this);
-		
-		/*********************************
-		 * 7. Initialize preferences
-		 *********************************/
-//		init_prefs();
-		
-		/*********************************
-		 * 8. Refresh DB
-		 *********************************/
-//		refresh_db();
-
-//		B14_v_1_2_verify_table_name_in_record();
+//        /*----------------------------
+//		 * 4. Set list
+//			----------------------------*/
+//        set_initial_dir_list();
+//        
+//        /*----------------------------
+//		 * 5. Set listener => Image buttons
+//			----------------------------*/
+//		set_listeners();
+//		
+//		/*----------------------------
+//		 * 6. Set path label
+//			----------------------------*/
+////		Methods.updatePathLabel(this);
+//		
+//		/*********************************
+//		 * 7. Initialize preferences
+//		 *********************************/
+////		init_prefs();
+//		
+//		/*********************************
+//		 * 8. Refresh DB
+//		 *********************************/
+////		refresh_db();
+//
+////		B14_v_1_2_verify_table_name_in_record();
 		
 		/*********************************
 		 * Debugs

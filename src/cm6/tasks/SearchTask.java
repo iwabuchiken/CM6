@@ -4,13 +4,13 @@ package cm6.tasks;
 import java.util.ArrayList;
 import java.util.List;
 
-import cm5.items.SearchedItem;
-import cm5.main.MainActv;
-import cm5.main.SearchActv;
-import cm5.main.TNActv;
-import cm5.utils.CONS;
-import cm5.utils.DBUtils;
-import cm5.utils.Methods;
+import cm6.items.SearchedItem;
+import cm6.main.MainActv;
+import cm6.main.SearchActv;
+import cm6.main.TNActv;
+import cm6.utils.CONS;
+import cm6.utils.DBUtils;
+import cm6.utils.Methods;
 
 import android.app.Activity;
 import android.content.Intent;

@@ -3,12 +3,12 @@ package cm6.listeners;
 import java.util.ArrayList;
 import java.util.List;
 
-import cm5.items.BM;
-import cm5.listeners.dialog.DialogOnItemClickListener;
-import cm5.main.R;
-import cm5.utils.Methods;
-import cm5.utils.Methods_dlg;
-import cm5.utils.Tags;
+import cm6.items.BM;
+import cm6.listeners.dialogues.DialogOnItemClickListener;
+import cm6.main.R;
+import cm6.utils.Methods;
+import cm6.utils.Methods_dlg;
+import cm6.utils.Tags;
 import android.app.Activity;
 import android.app.Dialog;
 import android.os.Vibrator;

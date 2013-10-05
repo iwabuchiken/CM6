@@ -8,9 +8,12 @@
         android:minSdkVersion="10"
         android:targetSdkVersion="10" />
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/cm5_project_icon"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
@@ -22,6 +25,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <activity android:name=".TNActv" android:screenOrientation="portrait"></activity>
+        <activity android:name=".ImageActv" android:screenOrientation="portrait"></activity>
+        <activity android:name=".PrefActv"></activity>
+        <activity android:name=".ALActv" android:screenOrientation="portrait"></activity>
+        <activity android:name=".PlayActv" android:screenOrientation="portrait"></activity>
+        <activity android:name=".SearchActv" android:screenOrientation="portrait"></activity>
+        <activity android:name=".BMActv" android:screenOrientation="portrait"></activity>
+        <activity android:name=".HistActv"></activity>
+        
+        <service android:name="cm5.services.Service_ShowProgress"></service>
+        
     </application>
 
 </manifest>

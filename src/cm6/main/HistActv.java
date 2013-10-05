@@ -13,26 +13,26 @@ import java.util.List;
 
 import org.apache.commons.lang.StringUtils;
 
-import cm5.adapters.AILAdapter;
-import cm5.adapters.AILAdapter_move;
-import cm5.adapters.HILAdapter;
-import cm5.adapters.TIListAdapter;
-import cm5.items.AI;
-import cm5.items.HI;
-import cm5.items.TI;
-import cm5.listeners.CustomOnItemLongClickListener;
-import cm5.listeners.button.ButtonOnClickListener;
-import cm5.listeners.button.ButtonOnTouchListener;
-import cm5.listeners.dialog.DialogListener;
-import cm5.tasks.Task_UpdateFileLength;
-import cm5.utils.CONS;
-import cm5.utils.DBUtils;
-import cm5.utils.Methods;
-import cm5.utils.Methods_CM5;
-import cm5.utils.Methods_dlg;
-import cm5.utils.Tags;
+import cm6.adapters.AILAdapter;
+import cm6.adapters.AILAdapter_move;
+import cm6.adapters.HILAdapter;
+import cm6.adapters.TIListAdapter;
+import cm6.items.AI;
+import cm6.items.HI;
+import cm6.items.TI;
+import cm6.listeners.CustomOnItemLongClickListener;
+import cm6.listeners.buttons.ButtonOnClickListener;
+import cm6.listeners.buttons.ButtonOnTouchListener;
+import cm6.listeners.dialogues.DialogListener;
+import cm6.tasks.Task_UpdateFileLength;
+import cm6.utils.CONS;
+import cm6.utils.DBUtils;
+import cm6.utils.Methods;
+import cm6.utils.Methods_CM5;
+import cm6.utils.Methods_dlg;
+import cm6.utils.Tags;
 
-import cm5.main.R;
+import cm6.main.R;
 
 import android.app.Activity;
 import android.app.AlertDialog;

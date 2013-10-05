@@ -1,9 +1,9 @@
 package cm6.listeners;
 
-import cm5.main.PlayActv;
-import cm5.main.R;
-import cm5.utils.CONS;
-import cm5.utils.Methods;
+import cm6.main.PlayActv;
+import cm6.main.R;
+import cm6.utils.CONS;
+import cm6.utils.Methods;
 import android.app.Activity;
 import android.util.Log;
 import android.widget.SeekBar;

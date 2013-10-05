@@ -5,19 +5,19 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import cm5.adapters.TIListAdapter;
-import cm5.items.TI;
-import cm5.listeners.CustomOnItemLongClickListener;
-import cm5.listeners.button.ButtonOnClickListener;
-import cm5.listeners.button.ButtonOnTouchListener;
-import cm5.listeners.dialog.DialogListener;
-import cm5.utils.CONS;
-import cm5.utils.DBUtils;
-import cm5.utils.Methods;
-import cm5.utils.Methods_dlg;
-import cm5.utils.Tags;
+import cm6.adapters.TIListAdapter;
+import cm6.items.TI;
+import cm6.listeners.CustomOnItemLongClickListener;
+import cm6.listeners.buttons.ButtonOnClickListener;
+import cm6.listeners.buttons.ButtonOnTouchListener;
+import cm6.listeners.dialogues.DialogListener;
+import cm6.utils.CONS;
+import cm6.utils.DBUtils;
+import cm6.utils.Methods;
+import cm6.utils.Methods_dlg;
+import cm6.utils.Tags;
 
-import cm5.main.R;
+import cm6.main.R;
 
 import android.app.AlertDialog;
 import android.app.ListActivity;

@@ -25,16 +25,16 @@ import android.widget.GridView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
-import cm5.items.AI;
-import cm5.items.BM;
-import cm5.items.TI;
-import cm5.listeners.dialog.DialogButtonOnClickListener;
-import cm5.listeners.dialog.DialogButtonOnTouchListener;
-import cm5.listeners.dialog.DialogOnItemClickListener;
-import cm5.listeners.dialog.DialogOnItemLongClickListener;
-import cm5.main.ALActv;
-import cm5.main.R;
-import cm5.main.TNActv;
+import cm6.items.AI;
+import cm6.items.BM;
+import cm6.items.TI;
+import cm6.listeners.dialogues.DialogButtonOnClickListener;
+import cm6.listeners.dialogues.DialogButtonOnTouchListener;
+import cm6.listeners.dialogues.DialogOnItemClickListener;
+import cm6.listeners.dialogues.DialogOnItemLongClickListener;
+import cm6.main.ALActv;
+import cm6.main.R;
+import cm6.main.TNActv;
 
 public class Methods_dlg {
 

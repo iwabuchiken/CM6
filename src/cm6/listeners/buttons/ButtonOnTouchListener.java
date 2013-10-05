@@ -1,8 +1,8 @@
 package cm6.listeners.buttons;
 
-import cm5.utils.Methods;
-import cm5.utils.Tags;
-import cm5.main.R;
+import cm6.utils.Methods;
+import cm6.utils.Tags;
+import cm6.main.R;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;

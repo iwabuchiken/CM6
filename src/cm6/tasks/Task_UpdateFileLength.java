@@ -6,10 +6,10 @@ import java.util.List;
 
 import org.apache.commons.lang.StringUtils;
 
-import cm5.items.AI;
-import cm5.utils.CONS;
-import cm5.utils.DBUtils;
-import cm5.utils.Methods;
+import cm6.items.AI;
+import cm6.utils.CONS;
+import cm6.utils.DBUtils;
+import cm6.utils.Methods;
 import android.app.Activity;
 import android.database.sqlite.SQLiteDatabase;
 import android.media.MediaPlayer;

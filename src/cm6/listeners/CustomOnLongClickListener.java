@@ -1,7 +1,7 @@
 package cm6.listeners;
 
-import cm5.main.TNActv;
-import cm5.utils.Tags.ItemTags;
+import cm6.main.TNActv;
+import cm6.utils.Tags.ItemTags;
 import android.app.Activity;
 import android.view.View;
 import android.view.View.OnLongClickListener;

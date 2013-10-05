@@ -3,20 +3,20 @@ package cm6.adapters;
 import java.util.ArrayList;
 import java.util.List;
 
-import cm5.items.AI;
-import cm5.items.HI;
-import cm5.items.TI;
-import cm5.listeners.CustomOnLongClickListener;
-import cm5.listeners.button.ButtonOnClickListener;
-import cm5.main.ALActv;
-import cm5.main.MainActv;
-import cm5.main.TNActv;
+import cm6.items.AI;
+import cm6.items.HI;
+import cm6.items.TI;
+import cm6.listeners.CustomOnLongClickListener;
+import cm6.listeners.buttons.ButtonOnClickListener;
+import cm6.main.ALActv;
+import cm6.main.MainActv;
+import cm6.main.TNActv;
 
-import cm5.main.R;
-import cm5.utils.CONS;
-import cm5.utils.Methods;
-import cm5.utils.CONS.MoveMode;
-import cm5.utils.Tags;
+import cm6.main.R;
+import cm6.utils.CONS;
+import cm6.utils.Methods;
+import cm6.utils.CONS.MoveMode;
+import cm6.utils.Tags;
 
 import android.app.Activity;
 import android.content.ContentResolver;
