@@ -30,50 +30,50 @@ public class SeekBarChangeListener implements OnSeekBarChangeListener {
 	onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
 		// TODO Auto-generated method stub
 		
-		// Log
-		Log.d("SeekBarChangeListener.java" + "["
-				+ Thread.currentThread().getStackTrace()[2].getLineNumber()
-				+ ":"
-				+ Thread.currentThread().getStackTrace()[2].getMethodName()
-				+ "]", "progress=" + progress);
+//		// Log
+//		Log.d("SeekBarChangeListener.java" + "["
+//				+ Thread.currentThread().getStackTrace()[2].getLineNumber()
+//				+ ":"
+//				+ Thread.currentThread().getStackTrace()[2].getMethodName()
+//				+ "]", "progress=" + progress);
+//		
+//		// Log
+//		Log.d("SeekBarChangeListener.java" + "["
+//				+ Thread.currentThread().getStackTrace()[2].getLineNumber()
+//				+ ":"
+//				+ Thread.currentThread().getStackTrace()[2].getMethodName()
+//				+ "]", "fromUser=" + fromUser);
 		
-		// Log
-		Log.d("SeekBarChangeListener.java" + "["
-				+ Thread.currentThread().getStackTrace()[2].getLineNumber()
-				+ ":"
-				+ Thread.currentThread().getStackTrace()[2].getMethodName()
-				+ "]", "fromUser=" + fromUser);
-		
-		// Log
-		Log.d("SeekBarChangeListener.java" + "["
-				+ Thread.currentThread().getStackTrace()[2].getLineNumber()
-				+ ":"
-				+ Thread.currentThread().getStackTrace()[2].getMethodName()
-				+ "]",
-				"PlayActv.ai.getLength()="
-				+ Methods.convert_intSec2Digits_lessThanHour((int)PlayActv.ai.getLength() / 1000));
+//		// Log
+//		Log.d("SeekBarChangeListener.java" + "["
+//				+ Thread.currentThread().getStackTrace()[2].getLineNumber()
+//				+ ":"
+//				+ Thread.currentThread().getStackTrace()[2].getMethodName()
+//				+ "]",
+//				"PlayActv.ai.getLength()="
+//				+ Methods.convert_intSec2Digits_lessThanHour((int)PlayActv.ai.getLength() / 1000));
 		
 //		int seekedPosition = (int) ((float)progress / sb.getMax() * (float)PlayActv.ai.getLength());
 		int seekedPosition = (int) ((float)progress * 1.000f / sb.getMax() * (float)PlayActv.ai.getLength());
 		
-		// Log
-		Log.d("SeekBarChangeListener.java" + "["
-				+ Thread.currentThread().getStackTrace()[2].getLineNumber()
-				+ ":"
-				+ Thread.currentThread().getStackTrace()[2].getMethodName()
-//				+ "]", "(float)progress / sb.getMax() = " + ((float)progress / sb.getMax()));
-				+ "]", "(double)progress / sb.getMax() = " + String.format("%.5f", ((double)progress / sb.getMax())));
-		
-		// Log
-		Log.d("SeekBarChangeListener.java" + "["
-				+ Thread.currentThread().getStackTrace()[2].getLineNumber()
-				+ ":"
-				+ Thread.currentThread().getStackTrace()[2].getMethodName()
-				+ "]",
-				"seekedPosition=" + seekedPosition
-				+ "("
-				+ Methods.convert_intSec2Digits_lessThanHour(seekedPosition / 1000)
-				+ ")");
+//		// Log
+//		Log.d("SeekBarChangeListener.java" + "["
+//				+ Thread.currentThread().getStackTrace()[2].getLineNumber()
+//				+ ":"
+//				+ Thread.currentThread().getStackTrace()[2].getMethodName()
+////				+ "]", "(float)progress / sb.getMax() = " + ((float)progress / sb.getMax()));
+//				+ "]", "(double)progress / sb.getMax() = " + String.format("%.5f", ((double)progress / sb.getMax())));
+//		
+//		// Log
+//		Log.d("SeekBarChangeListener.java" + "["
+//				+ Thread.currentThread().getStackTrace()[2].getLineNumber()
+//				+ ":"
+//				+ Thread.currentThread().getStackTrace()[2].getMethodName()
+//				+ "]",
+//				"seekedPosition=" + seekedPosition
+//				+ "("
+//				+ Methods.convert_intSec2Digits_lessThanHour(seekedPosition / 1000)
+//				+ ")");
 
 		/***************************************
 		 * Set: Current position to the view

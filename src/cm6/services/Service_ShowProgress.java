@@ -123,19 +123,19 @@ public class Service_ShowProgress extends Service {
 //											&& !PlayActv.sb.isInTouchMode()) {
 											&& !PlayActv.sb.isPressed()) {
 										
-										// Log
-										Log.d("Service_ShowProgress.java"
-												+ "["
-												+ Thread.currentThread()
-														.getStackTrace()[2]
-														.getLineNumber()
-												+ ":"
-												+ Thread.currentThread()
-														.getStackTrace()[2]
-														.getMethodName() + "]",
-												"PlayActv.mp != null && " +
-//												"!PlayActv.sb.isInTouchMode()");
-												"!PlayActv.sb.isPressed()");
+//										// Log
+//										Log.d("Service_ShowProgress.java"
+//												+ "["
+//												+ Thread.currentThread()
+//														.getStackTrace()[2]
+//														.getLineNumber()
+//												+ ":"
+//												+ Thread.currentThread()
+//														.getStackTrace()[2]
+//														.getMethodName() + "]",
+//												"PlayActv.mp != null && " +
+////												"!PlayActv.sb.isInTouchMode()");
+//												"!PlayActv.sb.isPressed()");
 										
 										int currentPosition = PlayActv.mp.getCurrentPosition();
 										long length = PlayActv.ai.getLength();

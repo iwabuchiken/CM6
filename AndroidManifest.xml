@@ -35,7 +35,7 @@
         <activity android:name=".BMActv" android:screenOrientation="portrait"></activity>
         <activity android:name=".HistActv"></activity>
         
-        <service android:name="cm5.services.Service_ShowProgress"></service>
+        <service android:name="cm6.services.Service_ShowProgress"></service>
         
     </application>
 

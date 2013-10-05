@@ -4809,7 +4809,7 @@ public class Methods {
 //			ThumbnailActivity.tiList.remove(position);
 			
 //			// Log
-//			Log.d("DialogOnItemClickListener.java"
+//			Log.d("Methods.java"
 //					+ "["
 //					+ Thread.currentThread().getStackTrace()[2]
 //							.getLineNumber() + "]", "Data removed from tiList => " + ti.getFile_name());
@@ -4888,7 +4888,7 @@ public class Methods {
 //			ThumbnailActivity.tiList.remove(position);
 			
 //			// Log
-//			Log.d("DialogOnItemClickListener.java"
+//			Log.d("Methods.java"
 //					+ "["
 //					+ Thread.currentThread().getStackTrace()[2]
 //							.getLineNumber() + "]", "Data removed from tiList => " + ti.getFile_name());
@@ -6943,7 +6943,7 @@ public class Methods {
 		
 		
 		// Log
-		Log.d("DialogOnItemClickListener.java" + "["
+		Log.d("Methods.java" + "["
 				+ Thread.currentThread().getStackTrace()[2].getLineNumber()
 				+ ":"
 				+ Thread.currentThread().getStackTrace()[2].getMethodName()
@@ -6997,7 +6997,7 @@ public class Methods {
 //			i.putExtra("counter", timeLeft);
 
 			// Log
-			Log.d("DialogOnItemClickListener.java" + "["
+			Log.d("Methods.java" + "["
 					+ Thread.currentThread().getStackTrace()[2].getLineNumber()
 					+ ":"
 					+ Thread.currentThread().getStackTrace()[2].getMethodName()
