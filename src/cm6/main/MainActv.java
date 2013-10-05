@@ -91,15 +91,16 @@ public class MainActv extends ListActivity {
         
         vib = (Vibrator) this.getSystemService(this.VIBRATOR_SERVICE);
         
-        /*----------------------------
-		 * 4. Set list
-			----------------------------*/
-        set_initial_dir_list();
-        
-        /*----------------------------
-		 * 5. Set listener => Image buttons
-			----------------------------*/
-		set_listeners();
+        _onCreate_setup();
+//        /*----------------------------
+//		 * 4. Set list
+//			----------------------------*/
+//        set_initial_dir_list();
+//        
+//        /*----------------------------
+//		 * 5. Set listener => Image buttons
+//			----------------------------*/
+//		set_listeners();
 		
 //		/*----------------------------
 //		 * 6. Set path label
@@ -125,7 +126,21 @@ public class MainActv extends ListActivity {
         
     }//public void onCreate(Bundle savedInstanceState)
 
-    private void B14_v_1_2_verify_table_name_in_record() {
+    private void _onCreate_setup() {
+		// TODO Auto-generated method stub
+		/*----------------------------
+		 * 4. Set list
+			----------------------------*/
+		set_initial_dir_list();
+		
+		/*----------------------------
+		 * 5. Set listener => Image buttons
+			----------------------------*/
+		set_listeners();
+
+	}//private void _onCreate_setup()
+
+	private void B14_v_1_2_verify_table_name_in_record() {
 		
 		DBUtils dbu = new DBUtils(this, CONS.dbName);
 

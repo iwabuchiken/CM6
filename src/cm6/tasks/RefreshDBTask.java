@@ -66,7 +66,7 @@ public class RefreshDBTask extends AsyncTask<String, Integer, String> {
 
 		} else if (result == -3){//if (result == true)
 			
-			return "�V�K�̃t�@�C���͂���܂���";
+			return "No new entries";
 
 		} else {//if (result == true)
 			

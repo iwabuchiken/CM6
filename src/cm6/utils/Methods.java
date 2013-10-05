@@ -1318,11 +1318,11 @@ public class Methods {
 
 	/*********************************
 	 * <Return>
-	 * -1	=> Table setup failed
-	 * -2	=> "Get file list" failed
-	 * -3	=> "Get ai_list" failed
+	 * -1	=> Table setup failed<br>
+	 * -2	=> "Get file list" failed<br>
+	 * -3	=> "Get ai_list" failed<br>
 	 * 
-	 * 0<	=> Number of items added
+	 * 0<	=> Number of items added<br>
 	 *********************************/
 	public static int refresh_main_db(Activity actv) {
 		/*********************************
@@ -2149,6 +2149,9 @@ public class Methods {
 		}//if (result == false)
 	}//private static boolean refresh_main_db_2_set_up_table_refresh_history
 
+	/*********************************
+	 * @return false => 
+	 *********************************/
 	private static boolean refresh_main_db_1_set_up_table(
 			SQLiteDatabase wdb, DBUtils dbu, String tname) {
 		/****************************
