@@ -259,8 +259,15 @@ public class AILAdapter extends ArrayAdapter<AI> {
     		
 		} else {//if (ai != null && ai.getFile_name()
 			
+			// Log
+			Log.d("["
+					+ "AILAdapter.java : "
+					+ +Thread.currentThread().getStackTrace()[2]
+							.getLineNumber() + " : "
+					+ Thread.currentThread().getStackTrace()[2].getMethodName()
+					+ "]", "tv_title => \"\"");
+			
 //			tv.setText("No data");
-			tv_title.setText("");
 			
 		}//if (ai != null && ai.getFile_name()
     	

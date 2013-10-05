@@ -568,7 +568,7 @@ public class ALActv extends ListActivity {
 		
 		lv.setTag(Tags.ItemTags.dir_list_thumb_actv);
 		
-//		lv.setOnItemLongClickListener(new CustomOnItemLongClickListener(this));
+		lv.setOnItemLongClickListener(new CustomOnItemLongClickListener(this));
 		
 		/****************************
 		 * 3. "Bottom"

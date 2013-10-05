@@ -90,7 +90,7 @@ public class Methods_dlg {
 			****************************/
 		ALActv.dirListAdapter = new ArrayAdapter<String>(
 												actv,
-												android.R.layout.simple_list_item_1,
+												R.layout.simple_text_view,
 												ALActv.fileNameList
 											);
 		
