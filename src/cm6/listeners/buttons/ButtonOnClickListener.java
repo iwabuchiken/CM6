@@ -1,23 +1,13 @@
 package cm6.listeners.buttons;
 
-import cm5.main.R;
-
 import java.io.File;
 
-import cm5.items.AI;
-import cm5.items.BM;
-import cm5.items.TI;
-//import cm5.main.ImageActv;
-import cm5.main.ALActv;
-import cm5.main.BMActv;
-import cm5.main.MainActv;
-import cm5.main.PlayActv;
-import cm5.main.TNActv;
-import cm5.utils.CONS;
-import cm5.utils.DBUtils;
-import cm5.utils.Methods;
-import cm5.utils.Methods_CM5;
-import cm5.utils.Tags;
+import cm6.items.AI;
+import cm6.main.ALActv;
+import cm6.utils.CONS;
+import cm6.utils.Methods;
+import cm6.utils.Tags;
+
 
 import android.app.Activity;
 import android.app.Dialog;

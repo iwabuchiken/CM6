@@ -1,9 +1,9 @@
 package cm6.listeners.buttons;
 
-import cm5.items.AI;
-import cm5.utils.Methods;
-import cm5.utils.Methods_dlg;
-import cm5.utils.Tags;
+import cm6.items.AI;
+import cm6.utils.Methods;
+import cm6.utils.Methods_dlg;
+import cm6.utils.Tags;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Vibrator;

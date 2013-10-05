@@ -1,7 +1,7 @@
 package cm6.utils;
 
 
-import cm5.main.R;
+import cm6.main.R;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -59,30 +59,30 @@ import android.os.AsyncTask;
 // Apache
 import org.apache.commons.lang.StringUtils;
 
-import cm5.items.AI;
-import cm5.items.BM;
-import cm5.items.HI;
-import cm5.items.SearchedItem;
-import cm5.items.TI;
-import cm5.listeners.CustomOnItemLongClickListener;
-import cm5.listeners.MPOnCompletionListener;
-import cm5.listeners.dialog.DialogButtonOnClickListener;
-import cm5.listeners.dialog.DialogButtonOnTouchListener;
-import cm5.listeners.dialog.DialogListener;
-import cm5.listeners.dialog.DialogOnItemClickListener;
-import cm5.listeners.dialog.DialogOnItemLongClickListener;
-import cm5.main.ALActv;
-import cm5.main.MainActv;
-import cm5.utils.CONS.BMActv.SortOrder;
-import cm5.utils.CONS.SORT_ORDER;
-import cm5.main.HistActv;
-import cm5.main.PlayActv;
-import cm5.main.PrefActv;
-import cm5.main.SearchActv;
-import cm5.main.TNActv;
-import cm5.services.Service_ShowProgress;
-import cm5.tasks.RefreshDBTask;
-import cm5.tasks.SearchTask;
+import cm6.items.AI;
+import cm6.items.BM;
+import cm6.items.HI;
+import cm6.items.SearchedItem;
+import cm6.items.TI;
+import cm6.listeners.CustomOnItemLongClickListener;
+import cm6.listeners.MPOnCompletionListener;
+import cm6.listeners.dialogues.DialogButtonOnClickListener;
+import cm6.listeners.dialogues.DialogButtonOnTouchListener;
+import cm6.listeners.dialogues.DialogListener;
+import cm6.listeners.dialogues.DialogOnItemClickListener;
+import cm6.listeners.dialogues.DialogOnItemLongClickListener;
+import cm6.main.ALActv;
+import cm6.main.MainActv;
+import cm6.utils.CONS.BMActv.SortOrder;
+import cm6.utils.CONS.SORT_ORDER;
+import cm6.main.HistActv;
+import cm6.main.PlayActv;
+import cm6.main.PrefActv;
+import cm6.main.SearchActv;
+import cm6.main.TNActv;
+import cm6.services.Service_ShowProgress;
+import cm6.tasks.RefreshDBTask;
+import cm6.tasks.SearchTask;
 
 // REF=> http://commons.apache.org/net/download_net.cgi
 //REF=> http://www.searchman.info/tips/2640.html

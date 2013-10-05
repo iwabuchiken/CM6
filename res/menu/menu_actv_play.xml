@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:id="@+id/menu_actv_play_create_folder"
+		android:title="@string/menu_actv_play_create_folder"
+		android:icon="@drawable/ifm8_image_actv_opt_menu_add_pattern_30x30_v3"></item>
+	
+</menu>
