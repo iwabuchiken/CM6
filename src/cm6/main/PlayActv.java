@@ -38,7 +38,7 @@ public class PlayActv extends Activity {
 
 		super.onCreate(savedInstanceState);
 
-//		setContentView(R.layout.actv_play);
+		setContentView(R.layout.actv_play);
 
 		this.setTitle(this.getClass().getName());
 

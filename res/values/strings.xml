@@ -4,7 +4,10 @@
     <string name="app_name">cm6.main</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="hello">Hello!</string>
 
+    <string name="v1_tv_dir_path">Directory path</string>
+    
     <!-- Generic items -->
 	    <string name="generic_bt_ok">OK</string>
 	    <string name="generic_bt_cancel">キャンセル</string>
