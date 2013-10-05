@@ -849,7 +849,8 @@ public class Methods {
 		/****************************
 		 * 1. DB setup
 			****************************/
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+//		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		SQLiteDatabase rdb = dbu.getReadableDatabase();
 		
@@ -1159,7 +1160,8 @@ public class Methods {
 	}//public static String convert_filePath_into_path_label_no_base(Activity actv, String filePath)
 
 	public static List<String> get_table_list(Activity actv) {
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+//		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		SQLiteDatabase rdb = dbu.getReadableDatabase();
 
@@ -1251,7 +1253,8 @@ public class Methods {
 		 * 1. Set up DB(writable)
 			****************************/
 		//
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+//		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		//
 		SQLiteDatabase wdb = dbu.getWritableDatabase();
@@ -1345,7 +1348,7 @@ public class Methods {
 		 * 1. Set up DB(writable)
 			****************************/
 		//
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		//
 		SQLiteDatabase wdb = dbu.getWritableDatabase();
@@ -2269,7 +2272,7 @@ public class Methods {
 		 * 1. Set up DB(writable)
 			****************************/
 		//
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		//
 		SQLiteDatabase wdb = dbu.getWritableDatabase();
@@ -2545,7 +2548,7 @@ public class Methods {
 		 * 1. Set up DB(writable)
 			****************************/
 		//
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		//
 		SQLiteDatabase wdb = dbu.getWritableDatabase();
@@ -2812,7 +2815,7 @@ public class Methods {
 		/****************************
 		 * 0. Set up db
 			****************************/
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		SQLiteDatabase wdb = dbu.getWritableDatabase();
 		
@@ -2911,7 +2914,7 @@ public class Methods {
 		/****************************
 		* 1. Set up db
 		****************************/
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		SQLiteDatabase wdb = dbu.getWritableDatabase();
 		
@@ -2982,7 +2985,7 @@ public class Methods {
 		/****************************
 		 * 0. Set up db
 			****************************/
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		SQLiteDatabase wdb = dbu.getWritableDatabase();
 		
@@ -3481,7 +3484,7 @@ public class Methods {
 		/****************************
 		 * 8.2. Create a table
 			****************************/
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		SQLiteDatabase wdb = dbu.getWritableDatabase();
 		
@@ -3592,7 +3595,7 @@ public class Methods {
 		/****************************
 		 * 6. Drop table
 			****************************/
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		SQLiteDatabase db = dbu.getWritableDatabase();
 		
@@ -4019,7 +4022,7 @@ public class Methods {
 		/***************************************
 		 * Setup: DB
 		 ***************************************/
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		//
 		SQLiteDatabase wdb = dbu.getWritableDatabase();
@@ -4106,8 +4109,8 @@ public class Methods {
 				/***************************************
 				 * Loop: List<BM>
 				 ***************************************/
-//				DBUtils dbu = new DBUtils(actv, CONS.dbName);
-				dbu = new DBUtils(actv, CONS.dbName);
+//				DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
+				dbu = new DBUtils(actv, CONS.DB.dbName);
 				
 				for (int j = 0; j < hiList.size(); j++) {
 					
@@ -4161,7 +4164,7 @@ public class Methods {
 		/***************************************
 		 * Setup: DB
 		 ***************************************/
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		//
 		SQLiteDatabase wdb = dbu.getWritableDatabase();
@@ -4247,8 +4250,8 @@ public class Methods {
 				/***************************************
 				 * Loop: List<BM>
 				 ***************************************/
-//				DBUtils dbu = new DBUtils(actv, CONS.dbName);
-				dbu = new DBUtils(actv, CONS.dbName);
+//				DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
+				dbu = new DBUtils(actv, CONS.DB.dbName);
 				
 				for (int j = 0; j < bmList.size(); j++) {
 					
@@ -4451,7 +4454,7 @@ public class Methods {
 //		List<AI> toMoveFiles) {
 		AI ai) {
 		
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		SQLiteDatabase wdb = dbu.getWritableDatabase();
 
@@ -4539,7 +4542,7 @@ public class Methods {
 	private static void moveFiles_3_db(Activity actv,
 			String sourceTableName, String targetTableName, List<AI> toMoveFiles) {
 		
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		SQLiteDatabase wdb = dbu.getWritableDatabase();
 
@@ -4765,7 +4768,7 @@ public class Methods {
 		/****************************
 		 * 1. db setup
 			****************************/
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		SQLiteDatabase wdb = dbu.getWritableDatabase();
 		
@@ -4844,7 +4847,7 @@ public class Methods {
 		/****************************
 		 * 1. db setup
 			****************************/
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		SQLiteDatabase wdb = dbu.getWritableDatabase();
 		
@@ -4911,7 +4914,7 @@ public class Methods {
 
 	public static TI getData(Activity actv, String tableName, long file_id) {
 
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		SQLiteDatabase rdb = dbu.getReadableDatabase();
 		
@@ -4933,7 +4936,7 @@ public class Methods {
 		 * 
 		 * 4. Refresh thumbnails list
 			****************************/
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		SQLiteDatabase rdb = dbu.getReadableDatabase();
 		
@@ -5158,7 +5161,7 @@ public class Methods {
 		/****************************
 		 * 1. Set up db
 			****************************/
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		SQLiteDatabase wdb = dbu.getWritableDatabase();
 
@@ -5311,7 +5314,7 @@ public class Methods {
 		/****************************
 		* 1. DB setup
 		****************************/
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		SQLiteDatabase rdb = dbu.getReadableDatabase();
 		
@@ -5372,7 +5375,7 @@ public class Methods {
 		/****************************
 		* 1. DB setup
 		****************************/
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		SQLiteDatabase rdb = dbu.getReadableDatabase();
 		
@@ -5613,7 +5616,7 @@ public class Methods {
 		 * 4-2. Close db
 		 * 5. Start activity
 		 *********************************/
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		//
 		SQLiteDatabase wdb = dbu.getWritableDatabase();
@@ -5919,7 +5922,7 @@ public class Methods {
 //		/*********************************
 //		 * 2. Set up db
 //		 *********************************/
-//		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+//		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 //		
 //		//
 //		SQLiteDatabase wdb = dbu.getWritableDatabase();
@@ -6017,7 +6020,7 @@ public class Methods {
 		/*********************************
 		 * 1. DB setup
 		 *********************************/
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		SQLiteDatabase rdb = dbu.getReadableDatabase();
 
@@ -6255,7 +6258,7 @@ public class Methods {
 		 * 
 		 * 3. Build list
 		 *********************************/
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		SQLiteDatabase rdb = dbu.getReadableDatabase();
 
@@ -6349,7 +6352,7 @@ public class Methods {
 ////							.getLineNumber() + "]",
 ////					"[onListItemClick] Table name=" + Methods.convert_path_into_table_name(actv));
 //			
-//			DBUtils dbu = new DBUtils(actv, CONS.dbName);
+//			DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 //			
 //			//
 //			SQLiteDatabase wdb = dbu.getWritableDatabase();
@@ -6497,7 +6500,7 @@ public class Methods {
 		/*********************************
 		 * 1. DB setup
 		 *********************************/
-//		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+//		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		SQLiteDatabase rdb = dbu.getReadableDatabase();
@@ -6721,7 +6724,8 @@ public class Methods {
 		/*********************************
 		 * 1. DB setup
 		 *********************************/
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+//		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		SQLiteDatabase rdb = dbu.getReadableDatabase();
 		
@@ -7050,10 +7054,10 @@ public class Methods {
 		 * 3. Update data
 		 *********************************/
 		boolean res = DBUtils.update_data_ai(
-							actv, CONS.dbName, ai.getTable_name(),
+							actv, CONS.DB.dbName, ai.getTable_name(),
 							ai.getDb_id(),
 							CONS.cols_item[2], ai.getTitle());
-//		boolean res = DBUtils.update_data_ai(actv, CONS.dbName, ai.getDb_id(),
+//		boolean res = DBUtils.update_data_ai(actv, CONS.DB.dbName, ai.getDb_id(),
 //				CONS.cols_item[2], ai.getTitle());
 		
 		if (res == true) {
@@ -7377,7 +7381,7 @@ public class Methods {
 		/*********************************
 		 * 3. Update data
 		 *********************************/
-		boolean res = DBUtils.update_data_ai(actv, CONS.dbName, ai.getDb_id(),
+		boolean res = DBUtils.update_data_ai(actv, CONS.DB.dbName, ai.getDb_id(),
 							CONS.cols_item[Methods.getArrayIndex(CONS.cols_item, "memo")],
 //							ai.getTitle());
 							ai.getMemo());
@@ -7445,7 +7449,7 @@ public class Methods {
 		/*********************************
 		 * 1. DB setup
 		 *********************************/
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		SQLiteDatabase rdb = dbu.getReadableDatabase();
 		
