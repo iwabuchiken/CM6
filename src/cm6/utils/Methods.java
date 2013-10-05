@@ -6497,7 +6497,8 @@ public class Methods {
 		/*********************************
 		 * 1. DB setup
 		 *********************************/
-		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+//		DBUtils dbu = new DBUtils(actv, CONS.dbName);
+		DBUtils dbu = new DBUtils(actv, CONS.DB.dbName);
 		
 		SQLiteDatabase rdb = dbu.getReadableDatabase();
 		
@@ -7149,7 +7150,8 @@ public class Methods {
 		String db_src = StringUtils.join(
 					new String[]{
 							CONS.dpath_db,
-							CONS.fname_db},
+//							CONS.fname_db},
+							CONS.DB.dbName},
 					File.separator);
 		
 		String db_dst_folder = StringUtils.join(

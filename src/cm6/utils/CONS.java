@@ -137,7 +137,8 @@ public class CONS {
 	};
 	
 	// Backup
-	public static String dpath_db = "/data/data/cm5.main/databases";
+//	public static String dpath_db = "/data/data/cm5.main/databases";
+	public static String dpath_db = "/data/data/cm6.main/databases";
 	
 	public static String fname_db = "cm5.db";
 

@@ -92,32 +92,6 @@ public class MainActv extends ListActivity {
         vib = (Vibrator) this.getSystemService(this.VIBRATOR_SERVICE);
         
         _onCreate_setup();
-//        /*----------------------------
-//		 * 4. Set list
-//			----------------------------*/
-//        set_initial_dir_list();
-//        
-//        /*----------------------------
-//		 * 5. Set listener => Image buttons
-//			----------------------------*/
-//		set_listeners();
-		
-//		/*----------------------------
-//		 * 6. Set path label
-//			----------------------------*/
-////		Methods.updatePathLabel(this);
-//		
-//		/*********************************
-//		 * 7. Initialize preferences
-//		 *********************************/
-////		init_prefs();
-//		
-//		/*********************************
-//		 * 8. Refresh DB
-//		 *********************************/
-////		refresh_db();
-//
-////		B14_v_1_2_verify_table_name_in_record();
 		
 		/*********************************
 		 * Debugs
@@ -250,7 +224,9 @@ public class MainActv extends ListActivity {
 //		copy_db_file();
 //		test_simple_format();
 //		restore_db("cm5_backup_20131003_090245.bk");
-		restore_db("cm5_backup_20131004_224923.bk");
+//		restore_db("cm5_backup_20131004_224923.bk");
+		
+		_debug_show_db_list();
 		
 //		check_db();
 //		show_column_list("IFM9__Android");
@@ -268,6 +244,27 @@ public class MainActv extends ListActivity {
     	
     	
 	}//private void do_debug()
+
+	private void _debug_show_db_list() {
+		// TODO Auto-generated method stub
+		
+		File f = new File(CONS.DB.dPath_dbFile);
+		
+		String[] file_names = f.list();
+		
+		for (String name : file_names) {
+			
+			// Log
+			Log.d("["
+					+ "MainActv.java : "
+					+ +Thread.currentThread().getStackTrace()[2]
+							.getLineNumber() + " : "
+					+ Thread.currentThread().getStackTrace()[2].getMethodName()
+					+ "]", "fname=" + name);
+			
+		}
+		
+	}
 
 	private void add_new_col_last_viewed_at() {
 		/*********************************
@@ -1093,9 +1090,11 @@ public class MainActv extends ListActivity {
 			if (!target.getName().equals(CONS.fname_list)) {
 				
 				// debug
-				Toast.makeText(this, "list.txt �ł͂���܂���", 2000).show();
+				Toast.makeText(this,
+						"list.txt doesn't exist", Toast.LENGTH_SHORT).show();
 				
 				return;
+				
 			}//if (!target.getName().equals(ImageFileManager8Activity.fname_list))
 
 //			Methods.startThumbnailActivity(this, target.getName());
