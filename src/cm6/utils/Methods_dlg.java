@@ -1087,7 +1087,8 @@ public class Methods_dlg {
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(
 				actv,
 //				R.layout.dlg_db_admin,
-				android.R.layout.simple_list_item_1,
+//				android.R.layout.simple_list_item_1,
+				R.layout.simple_text_view,
 				list
 				);
 

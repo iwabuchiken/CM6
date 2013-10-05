@@ -14,6 +14,9 @@ import cm6.main.R;
 import cm6.utils.CONS;
 import cm6.utils.Methods;
 
+/*********************************
+ * "BML" => Bookmark list
+ *********************************/
 public class BMLAdapter extends ArrayAdapter<BM> {
 
 	private Context con;

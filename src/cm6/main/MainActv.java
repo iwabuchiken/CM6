@@ -91,16 +91,16 @@ public class MainActv extends ListActivity {
         
         vib = (Vibrator) this.getSystemService(this.VIBRATOR_SERVICE);
         
-//        /*----------------------------
-//		 * 4. Set list
-//			----------------------------*/
-//        set_initial_dir_list();
-//        
-//        /*----------------------------
-//		 * 5. Set listener => Image buttons
-//			----------------------------*/
-//		set_listeners();
-//		
+        /*----------------------------
+		 * 4. Set list
+			----------------------------*/
+        set_initial_dir_list();
+        
+        /*----------------------------
+		 * 5. Set listener => Image buttons
+			----------------------------*/
+		set_listeners();
+		
 //		/*----------------------------
 //		 * 6. Set path label
 //			----------------------------*/
@@ -234,7 +234,9 @@ public class MainActv extends ListActivity {
 		 *********************************/
 //		copy_db_file();
 //		test_simple_format();
-		restore_db("cm5_backup_20131003_090245.bk");
+//		restore_db("cm5_backup_20131003_090245.bk");
+		restore_db("cm5_backup_20131004_224923.bk");
+		
 //		check_db();
 //		show_column_list("IFM9__Android");
 //		10-01 15:05:54.408: D/MainActv.java[260](14946): New col added to: IFM9__Android
@@ -501,10 +503,9 @@ public class MainActv extends ListActivity {
 				+ Thread.currentThread().getStackTrace()[2].getMethodName()
 				+ "]",
 				"src=" + src
-				+ "/"
+				+ " *** "
 				+ "dst=" + dst);
 		
-////		String dst = "/data/data/ifm9.main/databases" + MainActv.dbName;
 		boolean res = Methods.restore_db(this, CONS.dbName, src, dst);
 		
 		// Log
@@ -718,7 +719,8 @@ public class MainActv extends ListActivity {
 		
 		adp_dir_list = new ArrayAdapter<String>(
 				this,
-				android.R.layout.simple_list_item_1,
+				R.layout.simple_text_view,
+//				android.R.layout.simple_list_item_1,
 				list_root_dir
 				);
 
@@ -832,6 +834,7 @@ public class MainActv extends ListActivity {
 
 		/*----------------------------
 		 * 0. Prefs set already?
+		 * 		=> If yes, then return
 			----------------------------*/
 		String temp = CONS.prefs_main.getString(CONS.pkey_current_path, null);
 		

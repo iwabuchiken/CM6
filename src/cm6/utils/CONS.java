@@ -276,9 +276,11 @@ public class CONS {
 	
 	public static class DB {
 		
-		public static String dbName = "cm5.db";
+//		public static String dbName = "cm5.db";
+		public static String dbName = "cm6.db";
 		
-		public static String dPath_dbFile = "/data/data/cm5.main/databases";
+//		public static String dPath_dbFile = "/data/data/cm5.main/databases";
+		public static String dPath_dbFile = "/data/data/cm6.main/databases";
 		
 		public static String dPath_dbFile_backup = "/mnt/sdcard-ext/cm5_backup";
 		

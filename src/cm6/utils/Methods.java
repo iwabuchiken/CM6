@@ -1357,7 +1357,8 @@ public class Methods {
 		 * 		2. backupTableName
 			****************************/
 //		boolean res = Methods.refreshMainDB_1_set_up_table(wdb, dbu, MainActv.tname_item);
-		boolean res = Methods.refresh_main_db_1_set_up_table(wdb, dbu, CONS.tname_main);
+		boolean res = 
+				Methods.refresh_main_db_1_set_up_table(wdb, dbu, CONS.tname_main);
 		
 		if (res == false) {
 			
