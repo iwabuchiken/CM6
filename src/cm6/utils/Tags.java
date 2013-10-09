@@ -180,6 +180,9 @@ public class Tags {
 		// BMActv.java
 		actv_bm_lv,
 		
+		// ALActv
+		dir_list_thumb_actv,
+		
 	}//public static enum ListTags
 
 

@@ -566,7 +566,8 @@ public class ALActv extends ListActivity {
 //		ListView lv = (ListView) findViewById(android.R.layout.activity_list_item);
 		ListView lv = this.getListView();
 		
-		lv.setTag(Tags.ItemTags.dir_list_thumb_actv);
+		lv.setTag(Tags.ListTags.dir_list_thumb_actv);
+//		lv.setTag(Tags.ItemTags.dir_list_thumb_actv);
 		
 		lv.setOnItemLongClickListener(new CustomOnItemLongClickListener(this));
 		

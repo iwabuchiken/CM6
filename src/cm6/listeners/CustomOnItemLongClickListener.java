@@ -95,6 +95,8 @@ public class CustomOnItemLongClickListener implements OnItemLongClickListener {
 		
 		case actv_main_lv:
 			
+			case_actv_main_lv();
+			
 			/*----------------------------
 			 * 0. Get folder name
 				----------------------------*/
@@ -136,5 +138,10 @@ public class CustomOnItemLongClickListener implements OnItemLongClickListener {
 		return true;
 		
 	}//public boolean onItemLongClick()
+
+	private void case_actv_main_lv() {
+		// TODO Auto-generated method stub
+		
+	}
 
 }
