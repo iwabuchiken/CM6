@@ -8,6 +8,7 @@ import cm6.utils.DBUtils;
 import cm6.utils.Methods;
 import cm6.utils.Methods_dlg;
 import cm6.utils.Tags;
+import cm6.items.AI;
 import cm6.items.BM;
 import cm6.main.R;
 import android.app.Activity;
@@ -34,6 +35,7 @@ public class DialogOnItemClickListener implements OnItemClickListener {
 	
 	BM bm;
 	
+	AI ai;
 	//
 	Vibrator vib;
 	
@@ -44,6 +46,17 @@ public class DialogOnItemClickListener implements OnItemClickListener {
 		// 
 		this.actv = actv;
 		this.dlg1 = dlg;
+		
+		vib = (Vibrator) actv.getSystemService(Context.VIBRATOR_SERVICE);
+		
+	}//public DialogOnItemClickListener(Activity actv, Dialog dlg)
+	
+	public DialogOnItemClickListener(Activity actv, Dialog dlg, AI ai) {
+		// 
+		this.actv	= actv;
+		this.dlg1	= dlg;
+		
+		this.ai		= ai;
 		
 		vib = (Vibrator) actv.getSystemService(Context.VIBRATOR_SERVICE);
 		
@@ -90,26 +103,12 @@ public class DialogOnItemClickListener implements OnItemClickListener {
 		case dlg_move_files://----------------------------------------------
 
 			case_dlg_move_files(parent, position);
-//			String folderPath = (String) parent.getItemAtPosition(position);
-//			
-//			Methods_dialog.dlg_confirm_moveFiles(actv, dlg, folderPath);
-
-//			// debug
-//			Toast.makeText(actv, "Move files to: " + folderPath, 2000)
-//					.show();
 			
 			break;// case dlg_move_files
 
 		case dlg_move_files_search://----------------------------------------------
 
 			case_dlg_move_files_search(parent, position);
-//			String folderPath = (String) parent.getItemAtPosition(position);
-//			
-//			Methods_dialog.dlg_confirm_moveFiles(actv, dlg, folderPath);
-
-//			// debug
-//			Toast.makeText(actv, "Move files to: " + folderPath, 2000)
-//					.show();
 			
 			break;// case dlg_move_files
 
@@ -264,11 +263,31 @@ public class DialogOnItemClickListener implements OnItemClickListener {
 			
 			break;// case dlg_bmactv_list_long_click
 
+		case dlg_ai_list://----------------------------------------------
+			
+			item = (String) parent.getItemAtPosition(position);
+			
+			case_dlg_ai_list();
+			
+			break;// case dlg_ai_list
+			
 		default:
 			break;
 		}//switch (tag)
 		
 	}//public void onItemClick(AdapterView<?> parent, View v, int position, long id)
+
+	private void case_dlg_ai_list() {
+		// TODO Auto-generated method stub
+		// Log
+		Log.d("["
+				+ "DialogOnItemClickListener.java : "
+				+ +Thread.currentThread().getStackTrace()[2]
+						.getLineNumber() + " : "
+						+ Thread.currentThread().getStackTrace()[2].getMethodName()
+						+ "]", "dlg_ai_list");
+		
+	}
 
 	private void
 	case_dlg_bmactv_list_long_click(String item) {

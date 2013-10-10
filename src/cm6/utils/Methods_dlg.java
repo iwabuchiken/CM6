@@ -2159,5 +2159,60 @@ public class Methods_dlg {
 		dlg.show();
 		
 	}//public static void dlg_admin(Activity actv)
-	
+
+	public static void dlg_AIList(Activity actv, AI ai) {
+		// TODO Auto-generated method stub
+		Dialog dlg = Methods_dlg.dlg_template_cancel(
+				actv, R.layout.dlg_db_admin, 
+				R.string.generic_tv_menu, 
+				R.id.dlg_db_admin_bt_cancel, 
+				Tags.DialogTags.dlg_generic_dismiss);
+
+		/*----------------------------
+		* 2. Prep => List
+		----------------------------*/
+		String[] choices = {
+				actv.getString(R.string.generic_tv_edit),
+				actv.getString(R.string.generic_tv_delete),
+		};
+		
+		List<String> list = new ArrayList<String>();
+		
+		for (String item : choices) {
+		
+			list.add(item);
+		
+		}
+		
+		/*----------------------------
+		* 3. Adapter
+		----------------------------*/
+		ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+						actv,
+						//R.layout.dlg_db_admin,
+						R.layout.simple_text_view,
+						list
+		);
+		
+		/*----------------------------
+		* 4. Set adapter
+		----------------------------*/
+		ListView lv = (ListView) dlg.findViewById(R.id.dlg_db_admin_lv);
+		
+		lv.setAdapter(adapter);
+		
+		/*----------------------------
+		* 5. Set listener to list
+		----------------------------*/
+		lv.setTag(Tags.DialogItemTags.dlg_ai_list);
+		
+		lv.setOnItemClickListener(new DialogOnItemClickListener(actv, dlg, ai));
+		
+		/*----------------------------
+		* 6. Show dialog
+		----------------------------*/
+		dlg.show();
+
+	}//public static void dlg_TNList(Activity actv, TI ti)
+
 }//public class Methods_dialog

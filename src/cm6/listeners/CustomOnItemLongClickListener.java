@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import cm6.items.AI;
 import cm6.utils.Methods;
 import cm6.utils.Methods_dlg;
 import cm6.utils.Tags;
@@ -109,6 +110,8 @@ public class CustomOnItemLongClickListener implements OnItemLongClickListener {
 			
 		case dir_list_thumb_actv:
 			
+			case_dir_list_thumb_actv(parent, position);
+			
 			break;
 		
 		}//switch (tag)
@@ -117,6 +120,24 @@ public class CustomOnItemLongClickListener implements OnItemLongClickListener {
 		return true;
 		
 	}//public boolean onItemLongClick()
+
+	private void
+	case_dir_list_thumb_actv(AdapterView<?> parent, int position) {
+		// TODO Auto-generated method stub
+		
+		AI ai = (AI) parent.getItemAtPosition(position);
+		
+		// Log
+		Log.d("[" + "CustomOnItemLongClickListener.java : "
+				+ +Thread.currentThread().getStackTrace()[2].getLineNumber()
+				+ " : "
+				+ Thread.currentThread().getStackTrace()[2].getMethodName()
+				+ "]", "ai.getFile_name()=" + ai.getFile_name());
+
+		// Start a dialog
+		Methods_dlg.dlg_AIList(actv, ai);
+		
+	}//case_dir_list_thumb_actv(AdapterView<?> parent, int position)
 
 	/*********************************
 	 * @param position 

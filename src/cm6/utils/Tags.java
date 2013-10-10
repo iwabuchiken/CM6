@@ -95,6 +95,9 @@ public class Tags {
 		// dlg_bmactv_list_long_click
 		dlg_bmactv_list_long_click,
 		
+		// dlg_ai_list
+		dlg_ai_list,
+		
 	}//public static enum DialogItemTags
 	
 	
