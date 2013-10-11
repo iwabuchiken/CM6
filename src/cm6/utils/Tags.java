@@ -67,6 +67,8 @@ public class Tags {
 		// dlg_edit_item.xml
 		dlg_edit_item_bt_ok,
 		
+		// dlg_confirm_remove_fil
+		dlg_confirm_remove_file_ok, dlg_confirm_remove_file_cancel,
 		
 	}//public static enum DialogTags
 	

@@ -267,7 +267,7 @@ public class DialogOnItemClickListener implements OnItemClickListener {
 			
 			item = (String) parent.getItemAtPosition(position);
 			
-			case_dlg_ai_list();
+			case_dlg_ai_list(item);
 			
 			break;// case dlg_ai_list
 			
@@ -277,7 +277,7 @@ public class DialogOnItemClickListener implements OnItemClickListener {
 		
 	}//public void onItemClick(AdapterView<?> parent, View v, int position, long id)
 
-	private void case_dlg_ai_list() {
+	private void case_dlg_ai_list(String item) {
 		// TODO Auto-generated method stub
 		// Log
 		Log.d("["
@@ -287,7 +287,25 @@ public class DialogOnItemClickListener implements OnItemClickListener {
 						+ Thread.currentThread().getStackTrace()[2].getMethodName()
 						+ "]", "dlg_ai_list");
 		
-	}
+		if (item.equals(actv.getString(
+							R.string.generic_tv_edit))) {
+			
+			// debug
+			Toast.makeText(actv, "EDIT", Toast.LENGTH_SHORT).show();
+			
+		} else if (item.equals(actv.getString(
+							R.string.generic_tv_delete))){
+			
+			Methods_dlg.dlg_removeAiFile(actv, ai, dlg1);
+			
+		} else {
+			
+			// debug
+			Toast.makeText(actv, "Unknown choice", Toast.LENGTH_SHORT).show();
+		}
+		
+		
+	}//private void case_dlg_ai_list(String item)
 
 	private void
 	case_dlg_bmactv_list_long_click(String item) {

@@ -2008,6 +2008,70 @@ public class Methods_dlg {
 
 		
 	}//public static void dlg_removeFolder(Activity actv)
+	
+	public static void dlg_removeAiFile(Activity actv, AI ai, Dialog dlg1) {
+		/****************************
+		 * Steps
+		 * 1. Set up
+		 * 2. Set folder name to text view
+		 ****************************/
+		// 
+		Dialog dlg2 = new Dialog(actv);
+		
+		//
+		dlg2.setContentView(R.layout.dlg_confirm_remove_folder);
+		
+		// Title
+		dlg2.setTitle(R.string.generic_tv_confirm);
+		
+		/****************************
+		 * 2. Set folder name to text view
+		 ****************************/
+		TextView tvFileName = (TextView) dlg2.findViewById(
+									R.id.dlg_confirm_remove_folder_tv_table_name);
+		
+		tvFileName.setText(ai.getFile_name());
+		
+		/****************************
+		 * 2. Set message
+		 ****************************/
+		TextView tvMessage = (TextView) dlg2.findViewById(
+				R.id.dlg_confirm_remove_folder_tv_message);
+		
+		tvMessage.setText(actv.getString(R.string.generic_confirm_remove_file));
+		
+		/****************************
+		 * 3. Add listeners => OnTouch
+		 ****************************/
+		//
+		Button btn_ok = (Button) dlg2.findViewById(R.id.dlg_confirm_remove_folder_btn_ok);
+		Button btn_cancel = (Button) dlg2.findViewById(R.id.dlg_confirm_remove_folder_btn_cancel);
+		
+		//
+		btn_ok.setTag(Tags.DialogTags.dlg_confirm_remove_file_ok);
+		btn_cancel.setTag(Tags.DialogTags.dlg_confirm_remove_file_cancel);
+		
+		//
+		btn_ok.setOnTouchListener(new DialogButtonOnTouchListener(actv, dlg1));
+		btn_cancel.setOnTouchListener(new DialogButtonOnTouchListener(actv, dlg1));
+		
+		/****************************
+		 * 4. Add listeners => OnClick
+		 ****************************/
+		//
+		btn_ok.setOnClickListener(
+						new DialogButtonOnClickListener(actv, dlg1, dlg2, ai));
+		
+		btn_cancel.setOnClickListener(
+						new DialogButtonOnClickListener(actv, dlg1, dlg2));
+		
+		/****************************
+		 * 5. Show dialog
+		 ****************************/
+		dlg2.show();
+		
+		
+	}//public static void dlg_removeFolder(Activity actv)
 
 	public static void dlg_edit_memo(Activity actv, AI ai) {
 		// TODO Auto-generated method stub

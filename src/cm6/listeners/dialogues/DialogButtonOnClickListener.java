@@ -119,6 +119,16 @@ public class DialogButtonOnClickListener implements OnClickListener {
 
 	}
 
+	public DialogButtonOnClickListener(Activity actv, Dialog dlg1,
+			Dialog dlg2, AI ai) {
+		// TODO Auto-generated constructor stub
+		this.actv	= actv;
+		this.dlg1	= dlg1;
+		this.dlg2	= dlg2;
+
+		this.ai		= ai;
+	}
+
 	public void onClick(View v) {
 		//
 		Tags.DialogTags tag_name = (Tags.DialogTags) v.getTag();
@@ -208,6 +218,12 @@ public class DialogButtonOnClickListener implements OnClickListener {
 			
 			break;// case dlg_confirm_remove_folder_cancel
 
+		case dlg_confirm_remove_file_cancel://---------------------------------------------
+			
+			dlg2.dismiss();
+			
+			break;// case dlg_confirm_remove_folder_cancel
+			
 		// dlg_confirm_remove_folder.xml
 		case dlg_confirm_remove_folder_ok://---------------------------------------------
 			

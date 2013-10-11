@@ -21,6 +21,10 @@
    		<string name="generic_tv_no_data">No data</string>
    		<string name="generic_bt_quit">終了</string>
     	<string name="generic_notice">注目</string>
+    	
+    	<string name="generic_confirm_remove_file">
+    	    			このファイルを削除しますか？</string>
+    	
     <!-- main_menu.xml -->
     <string name="main_opt_menu_create_folder">フォルダ作成</string>
     <string name="main_opt_menu_refresh_db">DBリフレッシュ</string>
