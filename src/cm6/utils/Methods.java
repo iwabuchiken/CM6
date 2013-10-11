@@ -3656,6 +3656,64 @@ public class Methods {
 		
 		return (target.delete());
 	}//public static boolean deleteDirectory(File target)
+	
+	/****************************
+	 * 1. REF=> http://www.rgagnon.com/javadetails/java-0483.html<br>
+	 * 2. Copied from => deleteDirectory(File target)
+	 * 
+	 * @return true => File delted<br>
+	 * 			false => File deletion failed, or file doesn't exist
+	 ****************************/
+	public static boolean deleteFile(String filePath) {
+		
+		boolean result = false;
+		
+		File targetFile = new File(filePath);
+		
+		if(targetFile.exists()) {
+			//
+			result = targetFile.delete();
+			
+			if (result == false) {
+				
+				// Log
+				Log.d("["
+						+ "Methods.java : "
+						+ +Thread.currentThread().getStackTrace()[2]
+								.getLineNumber()
+						+ " : "
+						+ Thread.currentThread().getStackTrace()[2]
+								.getMethodName() + "]",
+						"File deletion failed => " + filePath);
+				
+				return result;
+				
+			}
+			// Log
+			Log.d("["
+					+ "Methods.java : "
+					+ +Thread.currentThread().getStackTrace()[2]
+							.getLineNumber() + " : "
+					+ Thread.currentThread().getStackTrace()[2].getMethodName()
+					+ "]", "File delted => " + filePath);
+			
+			return result;
+			
+		} else {//if(target.exists())
+			
+			// Log
+			Log.d("["
+					+ "Methods.java : "
+					+ +Thread.currentThread().getStackTrace()[2]
+							.getLineNumber() + " : "
+					+ Thread.currentThread().getStackTrace()[2].getMethodName()
+					+ "]", "File doesn't exist => " + filePath);
+			
+			return result;
+			
+		}//if(target.exists())
+		
+	}//public static boolean deleteDirectory(File target)
 
 	public static void sort_tiList(List<TI> tiList) {
 		
@@ -4833,7 +4891,8 @@ public class Methods {
 
 	}//public static void deleteItem_fileId(Activity actv, TI ti, int position)
 
-	public static void deleteItem_fromTable_ai(Activity actv, String tableName, AI ai) {
+	public static void
+	deleteItem_fromTable_ai(Activity actv, String tableName, AI ai) {
 		/****************************
 		 * 1. db setup
 		 * 2. Delete data

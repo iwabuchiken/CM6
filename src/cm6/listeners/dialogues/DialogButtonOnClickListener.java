@@ -1,7 +1,12 @@
 package cm6.listeners.dialogues;
 
+import java.io.File;
+
+import org.apache.commons.lang.StringUtils;
+
 import cm6.items.AI;
 import cm6.items.BM;
+import cm6.main.ALActv;
 import cm6.main.R;
 import cm6.utils.CONS;
 import cm6.utils.DBUtils;
@@ -317,10 +322,66 @@ public class DialogButtonOnClickListener implements OnClickListener {
 			
 			break;// case dlg_edit_item_bt_ok
 			
+		case dlg_confirm_remove_file_ok:
+			
+			case_dlg_confirm_remove_file_ok();
+			
+			break;
+			
 		default: // ----------------------------------------------------
 			break;
 		}//switch (tag_name)
 	}//public void onClick(View v)
+
+	private void case_dlg_confirm_remove_file_ok() {
+		// TODO Auto-generated method stub
+		/*********************************
+		 * Remove => ai from aiList
+		 * Remove from => file from the folder
+		 * Remove from => table
+		 * Notify => Adapter
+		 * Dismiss the 2 dialogues
+		 *********************************/
+		/*********************************
+		 * Remove from => file from the folder
+		 *********************************/
+		String filePath = StringUtils.join(
+				new String[]{
+						ai.getFile_path(),
+						ai.getFile_name()},
+						File.separator);
+		
+		boolean result = Methods.deleteFile(filePath);
+		
+		if (result == false) {
+			return;
+		} else {//if (result == false)
+			// debug
+			Toast.makeText(actv, "File deleted", Toast.LENGTH_SHORT).show();
+		}//if (result == false)
+		
+		/*********************************
+		 * Remove => ai from aiList
+		 *********************************/
+		ALActv.aiList.remove(ai);
+
+		/*********************************
+		 * Remove from => table
+		 *********************************/
+		Methods.deleteItem_fromTable_ai(actv, ai.getTable_name(), ai);
+		
+		/*********************************
+		 * Notify => Adapter
+		 *********************************/
+		ALActv.ail_adp.notifyDataSetChanged();
+		
+		/*********************************
+		 * Dismiss the 2 dialogues
+		 *********************************/
+		dlg2.dismiss();
+		dlg1.dismiss();
+		
+	}//private void case_dlg_confirm_remove_file_ok() {
 
 	private void case_dlg_edit_item_bt_ok() {
 		// TODO Auto-generated method stub
